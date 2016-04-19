@@ -1,2 +1,11 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h1>Type your Url below</h1>
+
+<form action="/urls" method="post">
+	Enter URL:
+	<input type ="text" name="long_url" placeholder="Ask you type just type la">
+	<input type="submit" value="Submit">
+</form>
+
+<% unless url == '' %>
+	<p>Shortened result: <%= url %></p>
+<% end %>
