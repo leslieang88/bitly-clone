@@ -1,11 +1,40 @@
-<h1>Type your Url below</h1>
+
+<header>
+  <h1>Go. short </h1>
+</header>
+
+<section>
+  <p> Shorten your URL with the speed of light</p>
+</section>
 
 <form action="/urls" method="post">
-	Enter URL:
-	<input type ="text" name="long_url" placeholder="Ask you type just type la">
-	<input type="submit" value="Submit">
+  <input type ="text" name="long_url" placeholder="Enter your link here"id="link">
+  <input id ="button" type="submit" value="Go">
 </form>
 
-<% unless url == '' %>
-	<p>Shortened result: <%= url %></p>
+
+<% unless @error_message %>
+	<p id="sht_result">Shortened result: <a id= "int_link" href="<%= @new_url.short_url %>">http://www.go.short/<%= @new_url.short_url %> </a></p>
+
+  <%else%>
+    <p id="error_message"><%= @error_message %></p>
 <% end %>
+
+<table>
+  <%if @urls%>
+    <tr id='table_header'>
+      <th>Original</th>
+      <th>Shortened</th>
+      <th>Count</th>
+    </tr>
+    <% @urls.each do |x| %>
+       <tr>
+        <td><a class="table" href="<%=x.long_url%>"><%=x.long_url%> </a></td>
+        <td><a class="table" href="/<%=x.short_url%>"><%=x.short_url%> </a></td>
+        <td><a class="table" "count"><%=x.counter%></a></td>
+      </tr>
+  
+    <%end%>
+  <%end%>
+</table>
+

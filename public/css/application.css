@@ -1,0 +1,133 @@
+header {
+	color: white;
+	font-size: 280%;
+    /*margin-bottom: 10px;*/
+    margin-top: 10px;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+}
+
+section {
+	color: white;
+	opacity: 0.9;
+	font-size: 150%;
+    padding-bottom: 2px;
+    font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+}
+
+body {
+	padding-top: 80px;
+	background-image: url("space1.jpg");
+	background-size: 100%;
+}
+
+h1, p {
+	text-align: center;
+}
+
+form{
+	opacity: 0.9;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+#button {
+	background-color: transparent;
+	font-size: 100%;
+	padding: 6px;
+	border-color: #FF9800;
+	border-style: solid;
+	color: #FF9800;
+	border-width: 2;
+}
+
+	#button:hover {
+		background-color: #FF9800;;
+		opacity: 0.8;
+		color: black;
+	}
+
+	#button:focus {
+		outline: none;
+	}
+
+#link {
+	background-color: transparent;
+	border-width: 0;
+	font-size: 100%;
+	padding: 6px;
+	width: 320px;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+	text-align: center;
+	border-bottom: 2px solid #FF9800;	
+	color: #FF9800;
+}
+
+	#link:focus {
+		outline-color: #FF9800;
+	}
+
+#sht_result {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	padding-top: 10px;
+	opacity: 0.9;
+	color: white;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+}
+
+#int_link {
+	opacity: 0.9;
+	color: #FF9800;
+}
+
+.table {
+	color: white;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+}
+
+table, tr, td, th{
+	width: 300px;
+	text-align: center;
+	color: white;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+	margin: auto;
+	position: center;
+	border-style: solid;
+	border: 10px;
+	border-color: white;
+}
+
+#table_header > th {
+	border-bottom: 1px solid white;	
+}
+
+table {
+	margin-top: 80px;
+}
+
+#error_message {
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+	position: absolute;
+	margin: 0;
+	color: red;
+	font-size: 25;
+	font-family: "Prototype";
+	src: url("/css/Prototype.ttf");
+}
+
+#container {
+	position: relative;
+	text-align: center;
+}
